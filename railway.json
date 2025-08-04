@@ -1,0 +1,19 @@
+{
+  "services": {
+    "chroma": {
+      "build": {
+        "context": ".",
+        "dockerfile": "Railway.Dockerfile"
+      },
+      "env": {
+        "IS_PERSISTENT": "true"
+      },
+      "volumes": {
+        "chroma_data": "/chroma/chroma"
+      }
+    }
+  },
+  "volumes": {
+    "chroma_data": {}
+  }
+}
